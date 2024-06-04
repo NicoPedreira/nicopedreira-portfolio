@@ -2,33 +2,53 @@
 /* CSS Document */
 body {
 	margin: 0px;
+	background-image: url("img/backgroundbody.svg");
+	background-size: cover;
 }
 header {
 	display: flex;
 	flex-direction: column;
-	background-image: url("img/background-header.png");
-	height: 5%;
+	background-image: url("img/backgroundheader.png");
+	height: 210px;
 }
-.fotoheader{
-	position: absolute;
-	padding: 8% 0% 0% 1%;
+footer{
+	background-color: #E83E27;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 8px 0px;
 }
+footer a{
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+	align-items: center;
+}
+
 .botonera{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
-	gap: 3%;
-	padding: 10px;
+	gap: 3.5%;
+	padding: 10px 20px 10px 10px;
 	background-image: linear-gradient(to left, #E83E27, #F7A237);
 	height: auto;
+	z-index: 150;
 }
 .headerizq {
+	height: 160px;
+	padding:65px 0px 0px 20px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
-	gap: 30px;
+	gap: 35px;
+	position: absolute;
+}
+.fotoheader{
+	z-index: 160;
+	filter: drop-shadow(10px 8px 10px rgba(0,0,0,0.5))
 }
 .headertitle{
 	display: flex;
@@ -39,6 +59,7 @@ h1 {
 	font-size: 3em;
 	font-weight: bold;
 	color: white;
+	margin: 0px;
 }
 h2 {
 	font-family: Josefin Sans;
@@ -46,9 +67,86 @@ h2 {
 	font-weight: bold;
 	color: white;
 }
-span {
+h3{
 	font-family: Josefin Sans;
-	font-size: 1.2em;
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #E83E27;
+}
+h4 {
+	font-family: Josefin Sans;
 	font-weight: bold;
 	color: white;
+	font-size: 1.1em;
+}
+h5 {
+	font-family: Archivo;
+	font-weight: bold;
+	font-size: 0.9em;
+	color: white;
+}
+.mainindex {
+	display: flex;
+	flex-direction: row;
+}
+p{
+	font-family: Archivo;
+	font-size: 0.9em;
+	color: white;
+}
+span {
+	font-family: Josefin Sans;
+	font-size: 1em;
+	font-weight: bold;
+	color: white;
+}
+.datosper{
+	height: 100%;
+	width: 290px;
+	min-width: 290px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 60px 0px;
+	background-image: linear-gradient(#E83E27, #F7A237);
+}
+.niveles {
+	padding: 70px 40px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	gap: 40px;
+}
+.centerindex{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+}
+.sobremi{
+	background-color: #E83E27;
+	max-width: 500px;
+	padding: 15px 35px;
+	border-radius: 30px 0px;
+}
+.experiencia{
+	padding: 35px 0px;
+}
+.exp{
+	background-color: #E83E27;
+	border-radius: 30px 0px;
+	padding: 15px 35px;
+	max-width: 500px;
+}
+.educacion{
+	display: flex;
+	flex-direction: column;
+	background-color: #E83E27;
+	border-radius: 30px 0px;
+	padding: 35px 35px;
+	max-width: 500px;
+}
+.prim{
+	padding-bottom: 23px;
 }
