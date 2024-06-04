@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin: 0px;
+}
+header {
+	display: flex;
+	flex-direction: column;
+	background-image: url("img/background-header.png");
+	height: 5%;
+}
+.fotoheader{
+	position: absolute;
+	padding: 8% 0% 0% 1%;
+}
+.botonera{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 3%;
+	padding: 10px;
+	background-image: linear-gradient(to left, #E83E27, #F7A237);
+	height: auto;
+}
+.headerizq {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 30px;
+}
+.headertitle{
+	display: flex;
+	flex-direction: column;
+}
+h1 {
+	font-family: Josefin Sans;
+	font-size: 3em;
+	font-weight: bold;
+	color: white;
+}
+h2 {
+	font-family: Josefin Sans;
+	font-size: 1.7em;
+	font-weight: bold;
+	color: white;
+}
+span {
+	font-family: Josefin Sans;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: white;
+}
