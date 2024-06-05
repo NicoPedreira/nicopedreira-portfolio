@@ -88,6 +88,7 @@ h5 {
 .mainindex {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
 p{
 	font-family: Archivo;
@@ -122,6 +123,7 @@ span {
 	width: 40%;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	padding: 50px;
 }
 .sobremi{
@@ -139,6 +141,10 @@ span {
 	padding: 15px 35px;
 	max-width: 500px;
 }
+.educ{
+	display: flex;
+	flex-direction: column;
+}
 .educacion{
 	display: flex;
 	flex-direction: column;
@@ -149,4 +155,51 @@ span {
 }
 .prim{
 	padding-bottom: 23px;
+}
+.indexder{
+	padding: 34px 8% 34px 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap:4%;
+}
+.indexder h2{
+	color:#E83E27;
+}
+.idiomas{
+	background-color: #E83E27;
+	border-radius: 25px 0px;
+	padding: 1px 35px;
+}
+.redes{
+	padding-top: 35px;
+	display: flex;
+	gap: 30px;
+}
+.slider{
+	padding-bottom: 40px;
+}
+.indexslider{
+	width: 257px;
+	height: 400px;
+	background: url("img/slider1.png");
+	animation: slide 15s infinite;
+	border-radius: 25px 0px;
+}
+@keyframes slide{
+	20%{
+		background: url("img/slider1.png");
+	}
+	40%{
+		background: url("img/slider2.png");
+	}
+	60%{
+		background: url("img/slider3.png");
+	}
+	80%{
+		background: url("img/slider4.png");
+	}
+	100%{
+		background: url("img/slider5.png");
+	}
 }
