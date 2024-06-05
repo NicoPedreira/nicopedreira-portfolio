@@ -4,6 +4,7 @@ body {
 	margin: 0px;
 	background-image: url("img/backgroundbody.svg");
 	background-size: cover;
+	cursor: url("img/cursor.svg"), auto;
 }
 header {
 	display: flex;
@@ -18,6 +19,10 @@ footer{
 	align-items: center;
 	padding: 8px 0px;
 }
+a{
+	text-decoration: none;
+	cursor: url("img/cursormano.svg"), auto;
+}
 a:hover{
 	transform: scale(1.3);
 	transition: 0.5s;
@@ -31,6 +36,12 @@ footer a{
 	flex-direction: row;
 	gap: 15px;
 	align-items: center;
+}
+.botonera span:hover{
+	background-color: white;
+	color: #E83E27;
+	border-radius: 5px;
+	padding: 3px;
 }
 
 .botonera{
@@ -85,12 +96,12 @@ h4 {
 	font-family: Josefin Sans;
 	font-weight: bold;
 	color: white;
-	font-size: 1.1em;
+	font-size: 1.2em;
 }
 h5 {
 	font-family: Archivo;
 	font-weight: bold;
-	font-size: 0.9em;
+	font-size: 1.1em;
 	color: white;
 }
 .mainindex {
@@ -100,12 +111,12 @@ h5 {
 }
 p{
 	font-family: Archivo;
-	font-size: 0.9em;
+	font-size: 1em;
 	color: white;
 }
 span {
 	font-family: Josefin Sans;
-	font-size: 1em;
+	font-size: 1.2em;
 	font-weight: bold;
 	color: white;
 }
@@ -192,6 +203,7 @@ span {
 	left: 100%;
 	transform: translate(-100%,0%);
 	z-index: 200;
+	filter: drop-shadow(10px 8px 10px rgba(0,0,0,0.4))
 }
 .indexslider{
 	width: 257px;
