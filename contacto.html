@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nicolás Pedreira - Contacto</title>
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="botonera">
+			<a href="index.html">
+				<span>Home</span>
+				<img src="img/home.svg" width="18.3" height="17px" alt="home">
+			</a>
+			<a>
+				<span>Proyectos</span>
+				<img src="img/proyectos.svg" width="11.3px" height="17px" alt= "proyectos">
+			</a>
+			<a href="contacto.html">
+				<span>Contacto</span>
+				<img src="img/contacto.svg" width="17px" height="17px" alt="contacto">
+			</a>
+		</nav>
+		<div class="headerizq">
+			<div class="fotoheader">
+				<a href="index.html"><img src="img/fotocv.png" width="250px" height="250px" alt="fotocv"></a>
+			</div>
+			<div class="headertitle">
+				<h1>Nicolás Pedreira</h1>
+				<h2>Diseñador Gráfico Jr.</h2>
+			</div>
+		</div>
+	</header>
+	<main class="main-contacto">
+		<aside class="asidecontacto">
+			<div><h6>Let's work</h6></div>
+			<div class="rotar"><h6>2gether</h6></div>
+		</aside>
+		<div class="formulario">
+			<form method="post" action="mailto:npbproducciones@gmail.com?subject=Mail enviado desde el formulario de contacto" target="_blank" enctype="multipart/form-data">
+				<div class="formizq">
+					<label for="Nombre y apellido*">Nombre y apellido*</label>
+					<input type= "text" name="Nombre y apellido*" id="Nombre y apellido*" required>
+					<label for="Mail*">Mail*</label>
+					<input type= "email" name="Mail" id="Mail" placeholder="Ej: micorreo@gmail.com" required>
+					<h5>Tipo de proyecto (uno o más):</h5>
+						<label for="Tipo de proyecto (uno o más):">Ilustración<input type="checkbox" name="Tipo de proyecto (uno o más):" value="Ilustración" id="ilustracion"></label>
+						<label for="Tipo de proyecto (uno o más):">Edición de imagen<input type="checkbox" name="Tipo de proyecto (uno o más):" value="Edición de imagen" id="edicion"></label>
+						<label for="Tipo de proyecto (uno o más):">Editorial<input type="checkbox" name="Tipo de proyecto (uno o más):" value="Editorial" id="editorial"></label>
+						<label for="Tipo de proyecto (uno o más):">UX/UI<input type="checkbox" name="Tipo de proyecto (uno o más):" value="UX/UI" id="uxui"></label>
+						<label for="Tipo de proyecto (uno o más):">Otro(s)<input type="checkbox" name="Tipo de proyecto (uno o más):" value="Otro(s)" id="otro"></label>
+				</div>
+				<div class="formder">
+					<label for="Teléfono*">Teléfono*</label> 
+					<input type="tel" name="Teléfono*" id="Teléfono*" placeholder="Ej: +54 9 11**** ****" required>
+					<label for="Asunto*">Asunto*</label>
+					<input type= "text" name="Asunto*" id="Asunto*" placeholder="Motivo del contacto" required>
+					<label for="Comentarios">Comentarios</label>
+					<textarea name="Comentarios" id="Comentarios" maxlength="600"></textarea>
+					<label for="Adjuntar archivo (opcional)">Adjuntar archivo (opcional)</label>
+					<input type="file" >
+					<input type="reset" class="borrar" value="Borrar todo">
+					<input type="submit" class="vamos" value="¡Vamos!" formenctype="multipart/form-data">
+				</div>
+			</form>
+			<h3>*campos obligatorios</h3>
+		</div>
+	</main>
+	<footer>
+		<a href="https://wa.me/1559045096" target="_blank">
+			<p>+54 9 11 5904 5096</p>
+			<img src="img/wsp.svg" width="20px" heigth="20px" alt="wsp">
+		</a>
+		<a href="https://catedrawis.notion.site/C-tedra-Wisch-evsky-1b65b942afd84eefb42ff990f273653b" target="_blank">
+			<img src="img/catedraw.svg" width="32px" height="20px" alt="catedraw">
+		</a>
+		<a>
+			<p>npbproducciones@gmail.com</p>
+			<img src="img/gmail.svg" width="25.8px" height="20px" alt="gmail">
+		</a>
+	</footer>
+</body>
+</html>
