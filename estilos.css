@@ -130,7 +130,7 @@ h6{
 	align-items: flex-start;
 	width: 70%;
 	gap:40px;
-	padding: 50px 5% 7%;
+	padding: 90px 6% 7%;
 }
 .descripciones img:hover{
 	transform: scale(1)
@@ -154,6 +154,59 @@ h6{
 	flex-direction: column;
 	width: 450px;
 	gap: 15px;
+}
+.galeria{
+	padding-top: 5%;
+	display: grid;
+	grid-template-columns: 255px 255px 255px 255px;
+	grid-template-rows: 255px;
+}
+.maingallery{
+	display: flex;
+	justify-content: center;
+}
+.gallery{
+	padding: 8%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	width: 50%;
+}
+.gallery h3{
+	color:#E83E27;
+	font-size: 2em;
+}
+.gallery p{
+	color: black;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.gallery img{
+	filter: drop-shadow(10px 8px 10px rgba(0,0,0,0.5))
+}
+.gallery img:hover{
+	transform: scale(1);
+	
+}
+.blendgallery{
+	height: 660px;
+	display: grid;
+	grid-template-columns: 220px 920px 220px;
+	grid-template-rows: 220px;
+}
+.blend1{
+	grid-row-start: 1;
+	grid-column-start: 2;
+}
+.blend2{
+	grid-column-start: 1;
+	grid-row-start: 3;
+}
+.blend5{
+	grid-column-start: 3;
+	grid-row-start: 3;
 }
 .mainproyectos p{
 	color: black;
@@ -204,6 +257,7 @@ form {
 	transition: 0.4s;
 }
 .vamos{
+	font-size: 1em;
 	font-weight: bold;
 	display: flex;
 	align-self: center;
