@@ -164,6 +164,9 @@ h6{
 	display: flex;
 	justify-content: center;
 }
+.maingallery img:hover{
+	transform: scale(1);
+}
 .gallery{
 	padding: 8%;
 	display: flex;
@@ -176,18 +179,23 @@ h6{
 .gallery h3{
 	color:#E83E27;
 	font-size: 2em;
+	padding-top: 15px;
 }
 .gallery p{
-	color: black;
+	padding: 30px;
 	font-size: 1.3em;
-	font-weight: bold;
-}
-.gallery img{
+	line-height: 1.3;
+	background-color: #E83E27;
+	border-radius: 20px 0px;
 	filter: drop-shadow(10px 8px 10px rgba(0,0,0,0.5))
 }
-.gallery img:hover{
-	transform: scale(1);
-	
+.gallery a{
+	font-size: 0.9em;
+	height: 10px;
+	font-weight: 600;
+}
+.maingallery img{
+	filter: drop-shadow(10px 8px 10px rgba(0,0,0,0.5))
 }
 .blendgallery{
 	height: 660px;
@@ -244,6 +252,74 @@ h6{
 .budapest3{
 	grid-row-start: 2;
 	grid-column-start: 3;
+}
+.causagallery{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 250px 440px 250px;
+	grid-template-rows: 200px 200px 200px;	
+}
+.causa1{
+	grid-column-start: 2;
+	grid-row-start: 1;
+}
+.causaneta{
+	grid-column-start: 3;
+	grid-row-start: 3;
+}
+.mapacausa{
+	grid-column-start: 1;
+	grid-row-start: 3;
+}
+.tazacausa{
+	grid-column-start: 3;
+	grid-row-start: 2;
+}
+.causaid{
+	position: absolute;
+	transform: translate(-10%,0%);
+	top: 210px;
+	left: 1px;
+	z-index: 40;
+}
+.causasticks{
+	position: absolute;
+	transform: translate(70%,0%);
+	top: 800px;
+	right: 15%;
+	z-index: 40;
+}
+.wavegallery{
+	display: grid;
+	grid-template-columns: 340px 500px 340px;
+	grid-gap: 20px;
+}
+.bpcgallery{
+	display: grid;
+	grid-template:562px 320px / 280px 320px 320px 320px 280px;
+	grid-gap:25px;
+}
+.bpc1{
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+.bpc2{
+	grid-column-start: 2;
+	grid-row-start: 2;
+}
+.bpc3{
+	grid-column-start: 3;
+	grid-row-start: 2;
+}
+.bpc4{
+	grid-column-start: 4;
+}
+.bpc5{
+	grid-column-start: 5;
+	grid-row-start: 1;
+}
+video{
+	border-radius: 30px;
 }
 .mainproyectos p{
 	color: black;
@@ -345,11 +421,11 @@ span {
 .datosper{
 	width: 290px;
 	min-width: 290px;
-	gap:40px;
+	gap:31px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 60px 0px;
+	padding: 65px 0px;
 	background-image: linear-gradient(#E83E27, #F7A237);
 }
 .datos{
@@ -389,7 +465,7 @@ span {
 	transform: rotate(90deg);
 }
 .niveles {
-	padding: 70px 40px;
+	padding: 40px 40px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap:wrap;
