@@ -17,7 +17,7 @@ footer{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding: 8px 0px;
+	padding: 20px 0px;
 }
 a{
 	text-decoration: none;
@@ -43,7 +43,6 @@ footer a{
 	border-radius: 5px;
 	padding: 3px;
 }
-
 .botonera{
 	display: flex;
 	flex-direction: row;
@@ -208,6 +207,44 @@ h6{
 	grid-column-start: 3;
 	grid-row-start: 3;
 }
+.habitaciongallery{
+	display: grid;
+	grid-template-columns: 220px 410px 220px;
+	grid-template-rows: 300px 300px;
+	grid-gap: 20px;
+}
+.hab1{
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+.hab2{
+	grid-column-start: 1;
+	grid-row-start: 2;
+}
+.hab4{
+	grid-column-start: 3;
+	grid-row-start: 2;
+}
+.habitacioncentral{
+	grid-column-start: 2;
+}
+.budapestgallery{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 270px 750px 270px;
+	grid-template-rows: 270px 270px;
+}
+.budapest1{
+	grid-column-start: 2;
+	grid-row-start: 1;
+}
+.budapest2{
+	grid-column-start: 1;
+}
+.budapest3{
+	grid-row-start: 2;
+	grid-column-start: 3;
+}
 .mainproyectos p{
 	color: black;
 	font-weight: 600;
@@ -240,6 +277,10 @@ form {
 	flex-direction:column;
 	gap:20px;
 	justify-content: space-between;
+}
+input[type="checkbox"]{
+	margin-right: 15px;
+	transform: scale(1.5);
 }
 .borrar{
 	font-weight: bold;
@@ -304,11 +345,21 @@ span {
 .datosper{
 	width: 290px;
 	min-width: 290px;
+	gap:40px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 60px 0px;
 	background-image: linear-gradient(#E83E27, #F7A237);
+}
+.datos{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: flex-start;
+}
+.datos h5{
+	margin:3px;
 }
 .asidecontacto{
 	width: 290px;
