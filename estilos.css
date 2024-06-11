@@ -10,9 +10,9 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-top: 13%;
 	background-image: url("img/backgroundindex.svg");
 	gap:2%;
+	height: 100vh;
 }
 .indexbody h1{
 	font-size: 4em;
@@ -188,8 +188,9 @@ h6{
 .maingallery{
 	display: flex;
 	justify-content: center;
+	padding-bottom: 50px;
 }
-.maingallery img:hover{
+.gallery img:hover{
 	transform: scale(1);
 }
 .gallery{
