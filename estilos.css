@@ -737,7 +737,7 @@ span {
 	form{
 		flex-direction: column;
 		padding: 40px;
-		width: 80%;
+		width: 75%;
 	}
 	.main-contacto{
 		align-items: center;
@@ -767,6 +767,10 @@ span {
 	}
 	.maingallery img{
 		border-radius: 100px;
+	}
+	.maingallery video{
+		width: 100%;
+		height: 50%;
 	}
 	.blend1{
 		width: 90%;
