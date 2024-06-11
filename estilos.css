@@ -624,6 +624,12 @@ span {
 	z-index: 20;
 }
 @media screen and (max-width: 600px) {
+	.indexbody h1{
+		font-size: 2.5em;
+	}
+	.indexbody h2{
+	font-size: 1.5em;
+}
 	.botonera{
 	justify-content: space-around;
 	align-items: center;
@@ -730,7 +736,7 @@ span {
 	}
 	form{
 		flex-direction: column;
-		padding: 50px;
+		padding: 40px;
 		width: 80%;
 	}
 	.main-contacto{
@@ -764,6 +770,14 @@ span {
 	}
 	.blend1{
 		width: 90%;
+		height: 40%;
+	}
+	.causa1{
+		width: 95%;
+		height: 40%;
+	}
+	.galeria6{
+		width: 98%;
 		height: 40%;
 	}
 	.budapest1{
