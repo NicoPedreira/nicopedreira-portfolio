@@ -5,15 +5,14 @@ body {
 	background-image: url("img/backgroundbody.svg");
 	background-size: cover;
 	height: 100vh;
-	cursor: url("img/cursor.svg"), auto;
+	cursor: url("img/cursor.png"), auto;
 }
 .indexbody{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-image: url("img/backgroundindex.svg");
-	gap:2%;
-	height: 100vh;
+	gap:3%;
 }
 .indexbody h1{
 	font-size: 4em;
@@ -41,13 +40,12 @@ footer{
 	background-color: #E83E27;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	gap:20%;
 	padding: 20px 0px;
 }
 a{
 	text-decoration: none;
-	cursor: url("img/cursormano.svg"), auto;
+	cursor: url("img/cursormano.png"), auto;
 }
 a:not(.fixed):hover{
 	transform: scale(1.3);
@@ -59,8 +57,6 @@ img:hover{
 }
 footer a{
 	display: flex;
-	flex-direction: row;
-	gap: 15px;
 	align-items: center;
 }
 .botonera span:hover{
@@ -71,44 +67,31 @@ footer a{
 }
 .botonera{
 	display: flex;
-	flex-direction: row;
 	justify-content: flex-end;
-	align-items: center;
 	gap: 3.5%;
 	padding: 10px 20px 10px 10px;
 	background-image: linear-gradient(to left, #E83E27, #F7A237);
-	height: auto;
-	z-index: 150;
 }
 .headerizq {
 	height: 160px;
 	padding:65px 0px 0px 20px;
 	display: flex;
-	flex-direction: row;
 	align-items: center;
-	justify-content: flex-start;
 	gap: 35px;
 	position: absolute;
 }
 .fotoheader{
-	z-index: 160;
 	filter: drop-shadow(10px 8px 10px rgba(0,0,0,0.5))
-}
-.headertitle{
-	display: flex;
-	flex-direction: column;
 }
 h1 {
 	font-family: Josefin Sans;
 	font-size: 3em;
-	font-weight: bold;
 	color: white;
 	margin: 0px;
 }
 h2 {
 	font-family: Josefin Sans;
 	font-size: 1.7em;
-	font-weight: bold;
 	color: white;
 }
 h3{
@@ -119,13 +102,11 @@ h3{
 }
 h4 {
 	font-family: Josefin Sans;
-	font-weight: bold;
 	color: white;
 	font-size: 1.2em;
 }
 h5 {
 	font-family: Archivo;
-	font-weight: bold;
 	font-size: 1.1em;
 	color: white;
 }
@@ -140,7 +121,10 @@ h6{
 .mainhome {
 	display: flex;
 	flex-direction: row;
-	gap:4%;
+	gap:30px;
+}
+.mainhome article{
+	background-color: #E83E27;
 }
 .main-contacto{
 	display: flex;
@@ -152,8 +136,6 @@ h6{
 .descripciones{
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	width: 70%;
 	gap:40px;
 	padding: 90px 8% 7%;
 }
@@ -165,8 +147,6 @@ h6{
 }
 .bloque{
 	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
 	gap:100px;
 }
 .bloque img{
@@ -174,8 +154,6 @@ h6{
 }
 .descripcion{
 	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
 	flex-direction: column;
 	width: 450px;
 	gap: 15px;
@@ -199,7 +177,6 @@ h6{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 	gap: 20px;
 	width: 50%;
 }
@@ -453,7 +430,7 @@ span {
 	flex-direction: column;
 	align-items: center;
 	padding: 65px 0px;
-	background-color: #DB8810;
+	background-image: linear-gradient(#F7A237, #E83E27);
 }
 .datos{
 	display: flex;
@@ -474,14 +451,18 @@ span {
 	padding: 80px 20px 120px;
 }
 .asideproy{
-	width: 230px;
-	min-width: 230px;
+	width: 290px;
+	min-width: 290px;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	align-items: center;
+	background-image: linear-gradient(#F7A237, #E83E27);
+}
+.proyectos{
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
 	align-items: flex-start;
-	padding: 100px 0px 90px 60px;
-	background-color: #DB8810;
 }
 .asideproy h6{
 	color: white;
@@ -494,7 +475,6 @@ span {
 .niveles {
 	padding: 40px 40px;
 	display: flex;
-	flex-direction: row;
 	flex-wrap:wrap;
 	justify-content: space-around;
 	gap: 40px;
@@ -505,18 +485,14 @@ span {
 	flex-direction: column;
 	align-items: center;
 	padding: 70px 50px;
+	gap:20px;
 }
 .sobremi{
-	background-color: #E83E27;
 	max-width: 500px;
 	padding: 15px 35px;
 	border-radius: 30px 0px;
 }
-.experiencia{
-	padding: 35px 0px;
-}
 .exp{
-	background-color: #E83E27;
 	border-radius: 30px 0px;
 	padding: 15px 35px;
 	max-width: 500px;
@@ -528,7 +504,6 @@ span {
 .educacion{
 	display: flex;
 	flex-direction: column;
-	background-color: #E83E27;
 	border-radius: 30px 0px;
 	padding: 35px 35px;
 	max-width: 500px;
@@ -541,13 +516,12 @@ span {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	gap:3%;
+	gap:20px;
 }
 .homeder h2{
 	color:#E83E27;
 }
 .idiomas{
-	background-color: #E83E27;
 	border-radius: 25px 0px;
 	padding: 1px 35px;
 }
@@ -564,7 +538,6 @@ span {
 	top: 18%;
 	left: 100%;
 	transform: translate(-100%,0%);
-	z-index: 200;
 	filter: drop-shadow(10px 8px 10px rgba(0,0,0,0.4));
 }
 .indexslider{
@@ -630,6 +603,9 @@ span {
 	.indexbody h2{
 	font-size: 1.5em;
 }
+	.tituloindex{
+		width: 98%;
+	}
 	.botonera{
 	justify-content: space-around;
 	align-items: center;
@@ -649,7 +625,6 @@ span {
 	}
 	.mainhome {
 	flex-direction: column;
-	gap:4%;
 	align-items: center;
 }
 	.centerhome{
@@ -685,8 +660,8 @@ span {
 		justify-content: center;
 	}
 	.homeder{
+	padding-top: 0px;
 	align-items: center;
-	gap:3%;
 }
 	.asideproy{
 		display: none;
@@ -766,7 +741,7 @@ span {
 		padding-bottom: 5%;
 	}
 	.maingallery img{
-		border-radius: 100px;
+		border-radius: 15px;
 	}
 	.maingallery video{
 		width: 100%;
