@@ -81,7 +81,8 @@ footer a{
 	position: absolute;
 }
 .fotoheader{
-	filter: drop-shadow(10px 8px 10px rgba(0,0,0,0.5))
+	filter: drop-shadow(10px 8px 10px rgba(0,0,0,0.5));
+	z-index: 100;
 }
 h1 {
 	font-family: Josefin Sans;
@@ -539,6 +540,7 @@ span {
 	left: 100%;
 	transform: translate(-100%,0%);
 	filter: drop-shadow(10px 8px 10px rgba(0,0,0,0.4));
+	z-index: 60;
 }
 .indexslider{
 	width: 257px;
